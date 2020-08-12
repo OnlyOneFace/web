@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="3;http://www.baidu.com" /> -->
+    <meta name="Author" content="" />
+    <meta name="Description" content="前端基础页面" />
+    <link rel="shortcut icon" href="img/_Face_with_Tears_of_Joy-128.webp" />
+    <title>console</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <a id="name1">顶部</a>
+        <h1 align="center">Welcome Console</h1>
+        <ul class="nav" type="circle">
+            <li>角色系统</li>
+            <li>文件系统</li>
+            <li>任务系统</li>
+            <li>日志系统</li>
+        </ul>
+    </header>
+    <!-- 主体部分 -->
+    <div class="main">
+        <ol type="0">
+            <li>debug</li>
+            <li>info</li>
+            <li>error</li>
+            <li>panic</li>
+        </ol>
+        <center>
+            <dl>
+                <dt>登鹳雀楼</dt>
+                <dd>[唐] 王之涣</dd>
+                <dd>白日依山尽，黄河入海流。</dd>
+                <dd>欲穷千里目，更上一层楼。</dd>
+            </dl>
+            <!-- <img align="right" width="100" height="150" src="img/pognkooppv.png" alt="golang官方图标" title="golang官方图标" /> -->
+            <p>
+                <i><b>console</b></i> is a Go web which involves <u>file</u> and
+                <u>task</u> !<br /> we will provide service
+            </p>
+        </center>
+    </div>
+    <!-- 底部 -->
+    <footer>
+        <center>
+            <hr size="2" width="98%" color="#A00000" />
+            <div>click following tips</div>
+            <span>
+          <a href="https://github.com/OnlyOneFace/stu" target="_blank">跳转</a>
+          <a
+            href="mailto:13522570308@139.com"
+            target="_blank"
+            title="跳转至作者邮箱"
+            >邮件</a
+          >
+        </span>
+            <a href="#name1">回到顶部</a>
+        </center>
+    </footer>
+    <div class="box" draggable="true"></div>
+</body>
+
+<style>
+    .box {
+        width: 900;
+        height: 20px;
+        background-color: green;
+    }
+</style>
+
+<script>
+    var box = document.querySelector(".box");
+    //  绑定拖拽事件
+
+    //  拖拽开始
+    box.ondragstart = function() {
+        console.log("拖拽开始.");
+    };
+
+    //  拖拽离开：鼠标拖拽时离开被拖拽的元素时触发
+    box.ondragleave = function() {
+        console.log("拖拽离开..");
+    };
+
+    //  拖拽结束
+    box.ondragend = function() {
+        console.log("拖拽结束...");
+        console.log("---------------");
+    };
+
+    box.ondrag = function() {
+        console.log("拖拽");
+    };
+</script>
+
+</html>
